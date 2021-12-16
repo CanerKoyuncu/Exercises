@@ -60,8 +60,6 @@ def  turnRight90Degree(imagePath,saveName):
     image = turnLeft90Degree(image,saveName)
     print("image is saved: {}".format(image))
 
-
-
 # A funny mistake
 # def turnRight90Degree(imagePath):
 #     mappedPicList = pictureMapper(imagePath)

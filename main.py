@@ -61,28 +61,28 @@ def  turnRight90Degree(imagePath,saveName):
     print("image is saved: {}".format(image))
 
 # A funny mistake
-# def turnRight90Degree(imagePath):
-#     mappedPicList = pictureMapper(imagePath)
-#     picData = mappedPicList[0]
-#     picSize = int(mappedPicList[1][1] - 1)
-#     tmp = []
-#     pictureResult = []
-#
-#     for columnIndex in range(picSize):
-#         tmp.append([])
-#         for pixelInRow in range(picSize):
-#             tmp[columnIndex].insert(0,picData[columnIndex][pixelInRow])
-#
-#     for i in range(mappedPicList[1][1] - 1):
-#         pictureResult.extend(tmp[i])
-#
-#     new_image = Image.new(mode="RGB", size=((picSize + 1), (picSize + 1)))
-#     new_image.putdata(pictureResult)
-#     new_image.save("new.jpg")
+def funnyFunc(imagePath):
+    mappedPicList = pictureMapper(imagePath)
+    picData = mappedPicList[0]
+    picSize = int(mappedPicList[1][1] - 1)
+    tmp = []
+    pictureResult = []
+
+    for columnIndex in range(picSize):
+        tmp.append([])
+        for pixelInRow in range(picSize):
+            tmp[columnIndex].insert(0,picData[columnIndex][pixelInRow])
+
+    for i in range(mappedPicList[1][1] - 1):
+        pictureResult.extend(tmp[i])
+
+    new_image = Image.new(mode="RGB", size=((picSize + 1), (picSize + 1)))
+    new_image.putdata(pictureResult)
+    new_image.save("new.jpg")
 
 if __name__ == '__main__':
-    turnRight90Degree("cat.jpg","hello")
-
+    # turnRight90Degree("cat.jpg","hello")
+    funnyFunc("cat.jpg")
 
 
 

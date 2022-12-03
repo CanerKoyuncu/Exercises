@@ -1,5 +1,3 @@
-from PIL import Image
-
 import bubleSort
 import insertionSort
 import selectionSort

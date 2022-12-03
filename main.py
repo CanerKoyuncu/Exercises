@@ -3,6 +3,7 @@ from PIL import Image
 import bubleSort
 import insertionSort
 import selectionSort
+import image_rotate
 
 new_image = Image.new(mode="RGB", size=((picSize + 1), (picSize + 1)))
 new_image.putdata(pictureResult)

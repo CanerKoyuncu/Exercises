@@ -73,7 +73,3 @@ def funnyFunc(imagePath):
 
     for i in range(mappedPicList[1][1] - 1):
         pictureResult.extend(tmp[i])
-
-    new_image = Image.new(mode="RGB", size=((picSize + 1), (picSize + 1)))
-    new_image.putdata(pictureResult)
-    new_image.save("new.jpg")
